@@ -3,7 +3,7 @@ const http = require('http');
 let express = require('express')
 let app = express();
 const server = http.createServer(app);
-const parser = new SerialPort({ path: 'COM1', baudRate: 9600, dataBits: 8, stopBits: 1, Parity: 'none'})
+const parser = new SerialPort({ path: 'COM1', baudRate: 9600, dataBits: 8, stopBits: 1, parity: 'none'})
 
 const hostname = 'localhost';
 var port = 8081;
